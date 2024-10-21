@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Job Opening</title>
+    <link rel="stylesheet" href="PostAJob.css">
+</head>
+<body>
+    <div class="job-container">
+        <div class="job-box">
+            <h2>Create a Job Opening</h2>
+            <form action="#" method="POST">
+
+                <div class="form-group">
+                    <label for="job-title">Job Title</label>
+                    <input type="text" id="job-title" name="job-title" placeholder="Enter the job title" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="job-description">Job Description</label>
+                    <textarea id="job-description" name="job-description" rows="5" placeholder="Describe the job in detail" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="job-category">Category</label>
+                    <select id="job-category" name="job-category" required>
+                        <option value="" disabled selected>Select a category</option>
+                        <option value="web-development">Web Development</option>
+                        <option value="graphic-design">Graphic Design</option>
+                        <option value="content-writing">Content Writing</option>
+                        <option value="data-entry">Data Entry</option>
+                        <option value="digital-marketing">Digital Marketing</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="budget">Budget ($)</label>
+                    <input type="number" id="budget" name="budget" placeholder="Enter your budget" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="duration">Duration (Days)</label>
+                    <input type="number" id="duration" name="duration" placeholder="Enter duration in days" required>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="submit-btn" onclick="location.href='confirmation.html'">Post Job</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
